@@ -1,0 +1,74 @@
+/* Simple, centered layout with readable font, max-width container, spacing,
+   and a basic button style. */ 
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    padding: 2rem 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+h1 {
+    margin-top: 0;
+    color: #222;
+    text-align: center;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.output-row {
+    margin-bottom: 1.5rem;
+}
+
+#output {
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    min-height: 40px;
+    font-size: 1em;
+    margin-top: 0.5em;
+    white-space: pre-wrap;
+}
+
+.iso-row {
+    margin-bottom: 0.5rem;
+    font-size: 1em;
+    text-align: left;
+}
+
+button {
+    background: #0078d4;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #005fa3;
+}
